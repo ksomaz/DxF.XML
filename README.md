@@ -21,23 +21,21 @@ Here are some basic usage examples of XmlReaderLibrary:
 
 ```bash
 // Create an XmlReader instance
-using Dx.Xml;
+using DxF.XML.Finder;
 
 MemoryStream xmlStream = new MemoryStream(File.ReadAllBytes("sample.xml"));
-IXmlReader xmlReader = new XReader(xmlStream);
+XReader xmlReader = new XReader(xmlStream);
 
 // Retrieve the value of a specific node
-string nodeValue = xmlReader.GetNode("rootNode.subNode.value");
+string nodeValue = xmlReader.GetNode("rootNode", "subNode", ...);
 
 // Get the number of child nodes for a specific node
-int subNodeCount = xmlReader.GetNodeCount("rootNode.subNode");
+int subNodeCount = xmlReader.GetNodeCount("rootNode");
 
 // Dispose the XML reader
 xmlReader.Dispose();
 
 ```
-
-For detailed usage examples and API reference, please visit the documentation page.
 
 Contributing
 We welcome contributions of any kind! If you have feedback, bug reports, or suggestions, please share them in the GitHub Issues section.
