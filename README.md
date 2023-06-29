@@ -24,7 +24,7 @@ Here are some basic usage examples of XmlReaderLibrary:
 using DxF.XML.Finder;
 
 MemoryStream xmlStream = new MemoryStream(File.ReadAllBytes("sample.xml"));
-XReader xmlReader = new XReader(xmlStream);
+XmlReader xmlReader = new XmlReader(xmlStream);
 
 // Retrieve the value of a specific node
 string nodeValue = xmlReader.GetNode("rootNode", "subNode", ...);
