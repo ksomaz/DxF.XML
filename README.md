@@ -14,7 +14,7 @@ XmlReaderLibrary is a lightweight and easy-to-use XML reader library for .NET 7.
 
 You can add XmlReaderLibrary to your project via NuGet. Use the following command to install the NuGet package:
 
-[Download nuget](https://www.nuget.org/packages/DxF.XML)
+[Download NuGet](https://www.nuget.org/packages/DxF.XML)
 
 ```bash
 dotnet add package DxF.XML --version 1.0.0
